@@ -6,7 +6,28 @@ if [ $# -eq 2 ]; then
     for day in $(seq $start_day $end_day); do
         echo "Day : $day"
         mkdir -p $day
-        touch $day/{1..2}.py
+        echo '
+import os, sys
+sys.path.append(os.path.abspath("../"))
+
+import utils
+
+def main():
+    inputs = utils.read_inputs("1.input")
+    
+if __name__ == "__main__":
+    main()' >  $day/1.py
+        echo "
+import os, sys
+sys.path.append(os.path.abspath("../"))
+
+import utils
+
+def main():
+    inputs = utils.read_inputs("2.input")
+    
+if __name__ == "__main__":
+    main()" >  $day/2.py
         touch $day/{1..2}.input
     done
 else
