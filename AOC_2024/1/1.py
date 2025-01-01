@@ -5,9 +5,9 @@ import utils
 
 def main():
     inputs = utils.read_inputs("1.input")
-    first_set, second_set = sorted([int(x.split()[0]) for x in inputs]), sorted([int(x.split()[-1]) for x in inputs])
+    left_list, right_list = sorted([int(x.split()[0]) for x in inputs]), sorted([int(x.split()[-1]) for x in inputs])
     total_distance = 0
-    for x, y in zip(first_set, second_set):
+    for x, y in zip(left_list, right_list):
         total_distance += abs(x - y)
     print(f"{total_distance = }")
 
