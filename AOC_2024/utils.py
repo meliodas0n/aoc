@@ -1,0 +1,1 @@
+def read_inputs(file_path): return [x.replace("\n", "") for x in open(file_path, 'r').readlines()]
