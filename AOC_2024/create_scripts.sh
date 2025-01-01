@@ -6,8 +6,7 @@ if [ $# -eq 2 ]; then
     for day in $(seq $start_day $end_day); do
         echo "Day : $day"
         mkdir -p $day
-        echo '
-import os, sys
+        echo 'import os, sys
 sys.path.append(os.path.abspath("../"))
 
 import utils
@@ -17,8 +16,7 @@ def main():
     
 if __name__ == "__main__":
     main()' >  $day/1.py
-        echo "
-import os, sys
+        echo "import os, sys
 sys.path.append(os.path.abspath("../"))
 
 import utils
