@@ -5,7 +5,7 @@ import utils
 from collections import Counter
 
 def main():
-    inputs = utils.read_inputs("2.input")
+    inputs = utils.read_inputs("2i")
     left_list, right_list = [int(x.split()[0]) for x in inputs], [int(x.split()[-1]) for x in inputs]
     right_counts = Counter(right_list)
     similarity_score = 0

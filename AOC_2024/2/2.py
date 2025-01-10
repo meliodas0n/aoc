@@ -17,7 +17,7 @@ def elements_diff():
     pass
 
 def main():
-    inputs = utils.read_inputs("2.input")
+    inputs = utils.read_inputs("2i")
     
 if __name__ == "__main__":
     # main()

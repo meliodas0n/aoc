@@ -5,7 +5,7 @@ import utils
 from itertools import pairwise 
 
 def main():
-    unusal_data = utils.read_inputs("1.input")
+    unusal_data = utils.read_inputs("1i")
     safe_rep_count = 0
     for report in unusal_data:
         rep = [int(x) for x in report.split()]
