@@ -12,7 +12,7 @@ sys.path.append(os.path.abspath('../'))
 import utils
 
 def main():
-    inputs = utils.read_inputs('i1')
+    inputs = utils.read_inputs('i_1')
     
 if __name__ == '__main__':
     main()" >  $day/1.py
@@ -22,12 +22,12 @@ sys.path.append(os.path.abspath('../'))
 import utils
 
 def main():
-    inputs = utils.read_inputs('i2')
+    inputs = utils.read_inputs('i_2')
     
 if __name__ == '__main__':
     main()" >  $day/2.py
-        touch $day/i{1..2}
-        rm $day/{1..2}.input
+        touch $day/i_{1..2}
+        rm $day/i{1..2}
     done
 else
     echo 'Invalid Arguments'
