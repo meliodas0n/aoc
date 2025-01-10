@@ -11,13 +11,21 @@ def check_order(report):
             down += 1
         else:
             up += 1
-    print(up, down)
+    return up, down
 
 def elements_diff():
     pass
 
 def main():
     inputs = utils.read_inputs("2i")
+    for reporrt in inputs:
+        inc, dec = check_order(report)
+        if inc == 3:
+            print(f"Strictly Increasing")
+        elif dec == 3:
+            print(f"Strictly Decreasing")
+        else:
+            
     
 if __name__ == "__main__":
     # main()
